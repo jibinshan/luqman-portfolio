@@ -19,6 +19,9 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   title: "Luqman Sadiq - Fintech & Luxury Real Estate Portfolio",
   description: "Pioneering Finance, Redefining Skylines. Luqman Sadiq's portfolio in high-end fintech and luxury real estate.",
+   icons: {
+    icon: "/luqman-favicon.png",
+  },
 };
 
 export default function RootLayout({
