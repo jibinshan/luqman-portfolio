@@ -11,14 +11,16 @@ import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
   return (
-    <div className="relative w-full flex flex-col items-center overflow-x-hidden bg-[#0A192F]">
+    <div className="relative w-full flex flex-col items-center bg-[#0A192F]">
       <Navbar />
       <main className="w-full">
         <Hero />
         <Marquee />
         <About />
-        <Vision />
-        <Competencies />
+        <div className="relative w-full">
+          <Vision />
+          <Competencies />
+        </div>
         <CaseStudy />
         <Projects />
         <Contact />

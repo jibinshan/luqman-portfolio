@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${manrope.variable} ${playfair.variable} font-display antialiased bg-background text-foreground`}
+        className={`${manrope.variable} ${playfair.variable} font-display antialiased bg-background text-foreground overflow-x-hidden`}
       >
         <ThemeProvider
           attribute="class"

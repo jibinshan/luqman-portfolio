@@ -13,7 +13,7 @@ export function Vision() {
   const y = useTransform(scrollYProgress, [0, 1], ["-20%", "20%"]);
 
   return (
-    <section ref={containerRef} className="relative min-h-[80vh] flex items-center justify-center overflow-hidden py-32">
+    <section ref={containerRef} className="sticky top-0 h-screen flex items-center justify-center overflow-hidden z-0">
       {/* Parallax Background Image */}
       <motion.div 
         style={{ y }}
@@ -33,8 +33,16 @@ export function Vision() {
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
+          animate={{ y: [0, -20, 0] }}
+          transition={{ 
+            duration: 0.8,
+            y: {
+              duration: 1,
+              repeat: 0,
+              ease: "easeInOut"
+            }
+          }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
           className="bg-[#0A192F]/40 backdrop-blur-md border border-white/10 rounded-3xl p-8 md:p-16 text-center shadow-2xl"
         >
           {/* Futuristic Label */}

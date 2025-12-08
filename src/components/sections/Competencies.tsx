@@ -30,7 +30,7 @@ const competencies = [
 
 export function Competencies() {
   return (
-    <section className="py-24 sm:py-32 bg-[#081426] relative overflow-hidden" id="competencies">
+    <section className="py-24 sm:py-32 bg-[#081426] relative z-10 overflow-hidden" id="competencies">
       {/* Background Grid & Glow */}
       <div className="absolute inset-0 bg-[linear-gradient(to_right,#ffffff05_1px,transparent_1px),linear-gradient(to_bottom,#ffffff05_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] pointer-events-none" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[400px] bg-primary/10 rounded-full blur-[120px] pointer-events-none" />

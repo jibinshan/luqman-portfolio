@@ -9,7 +9,7 @@ export function About() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
             <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden">
               <Image
-                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCHSZ372LIhDq3ggDq5dyEHvixqM8ZoDS0SGMIViriptfGK-ycY6CsHFTC-Wbh3lD3YhUH5LBiYUn_cynWXDTNKbAheQb9pgol9qseYtZSKqrHQrcvuBxpzB5IcVkTfln36xguSrYCdMc3rfsejzkiWllm19MUWNdTXn17ZnFYCjaZxg4lX5NeY4WyyVvVzT99PYII_EpgFOFpFfmJPotCbYnNczE3g_J70hn3e7UN-FIwK0BR3ExADlZg67rw7usFcxrF5-b3UcH4g"
+                src="/luqman.png"
                 alt="Stylized, professional portrait of Luqman Sadiq in a modern office setting."
                 fill
                 className="object-cover"
