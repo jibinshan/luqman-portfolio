@@ -1,30 +1,38 @@
 "use client";
 
-import { useRef, useState } from "react";
-import { motion, useMotionTemplate, useMotionValue, useSpring } from "framer-motion";
-import { Bitcoin, Building2, LineChart, Landmark, Layers, Globe, Briefcase, TrendingUp } from "lucide-react";
-import { cn } from "@/lib/utils";
+import { motion, useMotionTemplate, useMotionValue } from "framer-motion";
+import { Building2, LineChart, Briefcase, TrendingUp, Key, Headphones } from "lucide-react";
 
 const competencies = [
   {
-    icon: Layers,
-    title: "Strategic Capital Aggregation",
-    description: "Architecting multi-tiered financial ecosystems to consolidate vast capital resources for high-impact ventures.",
+    icon: Briefcase,
+    title: "Property Sales",
+    description: "Expert assistance in buying and selling residential and commercial properties with market insights and professional guidance.",
   },
   {
-    icon: Building2,
-    title: "High-Yield Real Estate",
-    description: "Identifying and securing prime assets in global markets, maximizing ROI through data-driven valuation.",
+    icon: Key,
+    title: "Property Rentals",
+    description: "Find the perfect rental property or list your property for rent with our comprehensive rental services.",
+  },
+  {
+    icon: LineChart,
+    title: "Property Valuation",
+    description: "Professional property valuation services to help you make informed investment decisions.",
   },
   {
     icon: TrendingUp,
-    title: "Diversified Asset Allocation",
-    description: "Engineering resilient investment portfolios optimized for long-term compounding and volatility mitigation.",
+    title: "Investment Consulting",
+    description: "Strategic investment advice to maximize your real estate portfolio returns and minimize risks.",
   },
   {
-    icon: Landmark,
-    title: "Advanced Financial Engineering",
-    description: "Designing sophisticated capital frameworks and liquidity solutions for landmark developments.",
+    icon: Building2,
+    title: "Property Management",
+    description: "Complete property management services to maintain and enhance your real estate investments.",
+  },
+  {
+    icon: Headphones,
+    title: "24/7 Support",
+    description: "Round-the-clock customer support to address your real estate needs whenever they arise.",
   },
 ];
 
@@ -43,7 +51,7 @@ export function Competencies() {
             viewport={{ once: true }}
             className="text-primary font-medium tracking-wider uppercase mb-4 font-display text-sm"
           >
-            Expertise & Capabilities
+            Real Estate Solutions
           </motion.h2>
           <motion.h3 
             initial={{ opacity: 0, y: 20 }}
@@ -52,7 +60,7 @@ export function Competencies() {
             transition={{ delay: 0.1 }}
             className="text-4xl md:text-5xl font-bold text-white font-display"
           >
-            Core Competencies
+            My Services
           </motion.h3>
           <motion.p 
             initial={{ opacity: 0, y: 20 }}
@@ -61,11 +69,11 @@ export function Competencies() {
             transition={{ delay: 0.2 }}
             className="mt-6 max-w-2xl mx-auto text-white/60 text-lg leading-relaxed"
           >
-            Specialized expertise at the intersection of high-finance, technology, and global real estate development.
+            Comprehensive real estate solutions tailored to your unique needs and goals.
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {competencies.map((item, index) => (
             <SpotlightCard key={index} item={item} index={index} />
           ))}
